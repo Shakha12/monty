@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * f_pop - print the top
+ * fn_pop - print the top
  * @head: stack head
  * @counter: linenumber
  * Return: on success no return
 */
-void f_pop(stack_t **head, unsigned int counter)
+void fn_pop(stack_t **head, unsigned int counter)
 {
 	stack_t *hd;
 
