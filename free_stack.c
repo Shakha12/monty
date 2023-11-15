@@ -5,13 +5,13 @@
 */
 void free_stack(stack_t *head)
 {
-	stack_t *aux;
+	stack_t *ax;
 
-	aux = head;
+	ax = head;
 	while (head)
 	{
-		aux = head->next;
+		ax = head->next;
 		free(head);
-		head = aux;
+		head = ax;
 	}
 }
