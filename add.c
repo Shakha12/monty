@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * fn_add - two elements to add to the stack.
+ * f_add - two elements to add to the stack.
  * @head: stack head
  * @counter: line_number
  * Return: no return
 */
-void fn_add(stack_t **head, unsigned int counter)
+void f_add(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
 	int length = 0, aux;
