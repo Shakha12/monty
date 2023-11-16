@@ -1,3 +1,4 @@
+#define _GNU_SOURCE
 #include "monty.h"
 bus_t bus = {NULL, NULL, NULL, 0};
 /**
@@ -14,7 +15,7 @@ int main(int argc, char *argv[])
 	ssize_t read_line = 1;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
-
+	
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
@@ -35,11 +36,11 @@ int main(int argc, char *argv[])
 		counter++;
 		if (read_line > 0)
 		{
-			execute(content, &stack, counter, file);
+			e_execute(content, &stack, counter, file);
 		}
 		free(content);
 	}
-	free_stack(stack);
+	f_free_stack(stack);
 	fclose(file);
 return (0);
 }
